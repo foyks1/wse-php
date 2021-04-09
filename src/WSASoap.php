@@ -96,7 +96,8 @@ class WSASoap
         /* Add the WSA Action */
         $header = $this->locateHeader();
 
-        $nodeAction = $this->soapDoc->createElementNS($this->ns, self::WSAPFX.':Action', $action);
+        $nodeAction = $this->soapDoc->createElementNS('http://www.w3.org/2005/08/addressing', self::WSAPFX.':Action', $action);
+
         $header->appendChild($nodeAction);
     }
 

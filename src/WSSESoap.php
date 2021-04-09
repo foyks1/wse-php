@@ -175,6 +175,7 @@ class WSSESoap
         $token->appendChild($created);
     }
 
+
     public function addBinaryToken($cert, $isPEMFormat = true, $isDSig = true)
     {
         $security = $this->locateSecurityHeader();
@@ -277,7 +278,7 @@ class WSSESoap
             }
         }
 
-        $algorithm = XMLSecurityDSig::SHA1;
+        $algorithm = XMLSecurityDSig::GOST3411;
         if (is_array($options) && isset($options['algorithm'])) {
             $algorithm = $options['algorithm'];
         }
