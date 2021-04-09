@@ -1,5 +1,5 @@
 {
-	"name" : "robrichards/wse-php",
+	"name" : "foyks1/wse-php",
 	"description" : "Libraries for adding WS-* support to ext/soap in PHP.",
 	"authors" : [{
 			"name" : "Rob Richards",
@@ -13,10 +13,10 @@
 		"WS-Addressing",
 		"WS-Security"
 	],
-	"homepage" : "https://github.com/robrichards/wse-php",
+	"homepage" : "https://github.com/foyks1/wse-php",
 	"autoload" : {
 		"psr-4" : {
-			"RobRichards\\WsePhp\\" : "src"
+			"foyks1\\WsePhp\\" : "src"
 		}
 	},
 	"require" : {
